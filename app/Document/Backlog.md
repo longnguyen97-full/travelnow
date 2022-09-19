@@ -8,3 +8,6 @@ thiết lập mySQL cho dự án               -> done
 
 [Phase 2]
 xây dựng trang admin CRUD               -> open
+
+[Phase 3]
+xây dựng trrang user                    -> open
