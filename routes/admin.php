@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\VueController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,5 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-
-// waiting to test...
+//Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/{any}', [VueController::class, 'index'])->where('any', '.*');
